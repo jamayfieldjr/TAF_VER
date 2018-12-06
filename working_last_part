@@ -1,0 +1,20 @@
+
+#https://stackoverflow.com/questions/7231204/how-to-replace-values-at-specific-indexes-of-a-python-list
+
+#zulu=['07', '13', '18', '22', '00', '07']
+zulu=[7, 13, 18, 22, 00, 7]
+zulu_inner= ['-9', '09', '-9', '-9', '-9', '-9', '-9'] 
+#zulu_outer= [-9, 9, -9, -9, -9, -9, -9] 
+zulu_outer=[9]
+idx=[index for index,value in enumerate(zulu_outer) if value > -9]
+
+#print(idx)
+#idx = [int(x) for x in idx]
+#print(type(idx))
+#print(idx)
+
+
+for i in idx:
+  print(zulu_outer[i])
+  print(zulu[idx[i]])
+  zulu[idx[i]] = zulu_outer[i]
