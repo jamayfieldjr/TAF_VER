@@ -1,0 +1,17 @@
+
+#https://stackoverflow.com/questions/7231204/how-to-replace-values-at-specific-indexes-of-a-python-list
+
+
+list1=[7, 13, 18, 22, 00, 7]
+list2=[9,15]
+idx=[1,2]
+additive = [1] * (len(idx)-1)
+additive.insert(0,0)
+print(additive)
+
+print(list1)
+
+for index in range(len(idx)):
+ list1.insert(idx[index]+additive[index],list2[index]) 
+
+print(list1)
