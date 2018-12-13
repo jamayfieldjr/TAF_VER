@@ -18,3 +18,7 @@ In development *
 1. main.py to run the program as a Python 3 module 
 2. updating the programs with functions and classes 
 3. TAFverstats.py - obtains statsitics of the TAF verificaed by routine Meteorological Terminal Aviation Routine Weather Report (METARs) 
+
+References:
+
+http://prnfc.org/wp-content/uploads/2016/12/USN-TAF-Encoding.pdf
