@@ -19,6 +19,13 @@ In development *
 2. updating the programs with functions and classes 
 3. TAFverstats.py - obtains statsitics of the TAF verificaed by routine Meteorological Terminal Aviation Routine Weather Report (METARs) 
 
-References:
+Motivation
+https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/met.62
 
-http://prnfc.org/wp-content/uploads/2016/12/USN-TAF-Encoding.pdf
+
+References:
+US Navy - http://prnfc.org/wp-content/uploads/2016/12/USN-TAF-Encoding.pdf
+NWS - https://www.weather.gov/media/okx/Aviation/TAF_Card.pdf
+      http://www.nws.noaa.gov/directives/sym/pd01008013curr.pdf
+UK - https://publicapps.caa.co.uk/docs/33/CAP746_Mar17.pdf     
+ 
