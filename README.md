@@ -24,6 +24,8 @@ https://rmets.onlinelibrary.wiley.com/doi/pdf/10.1002/met.62
 
 
 References:
+US Air Force - http://www.belvoir.army.mil/daaf/wx/AFMAN/AFMAN15-124.pdf
+
 US Navy - http://prnfc.org/wp-content/uploads/2016/12/USN-TAF-Encoding.pdf
 
 NWS - https://www.weather.gov/media/okx/Aviation/TAF_Card.pdf
