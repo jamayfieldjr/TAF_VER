@@ -8,7 +8,7 @@ TAFtime.py - obtains the time of the begin and end of each from, temporary, prob
 
 TAFweather.py - obtains the weather (i.e.) +/- (modifiers), VC, RA SN FZRA ... etc. 
 
-TAFwind.py - obtains the weather (i.e.) +/- (modifiers), VC, RA SN FZRA ... etc. 
+TAFwind.py - obtains the wind (i.e.) dd/ffff/(KT or m/s)  
 
 TAFwindshear.py - obtains altitude, wind speed, and wind direction 
 
