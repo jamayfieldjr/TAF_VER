@@ -32,6 +32,9 @@ NWS - https://www.weather.gov/media/okx/Aviation/TAF_Card.pdf
       http://www.nws.noaa.gov/directives/sym/pd01008013curr.pdf
 
 Eurocontrol - https://www.easa.europa.eu/sites/default/files/dfu/NPA%202014-07%20%28A%29.pdf
+            - http://www.caa.ro/media/docs/12_AERODROME_FORECAST_TAF.pdf
 
-UK - https://publicapps.caa.co.uk/docs/33/CAP746_Mar17.pdf     
+UK - https://publicapps.caa.co.uk/docs/33/CAP746_Mar17.pdf  
+
+
  
