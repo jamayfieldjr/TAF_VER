@@ -4,9 +4,9 @@ Terminal Aerodrome Forecast Verification
 Objective:
 
 To verify Terminal Aerodrome Forecast based upon point scheme based upon aviation safety.  
-
+ 
 Point Scheme
-
+  
 Amendment within 6 hours (1 Point)
 Amendment based upon a change a weather not a correction 
 
