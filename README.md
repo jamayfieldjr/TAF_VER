@@ -3,7 +3,7 @@ Terminal Aerodrome Forecast Verification
 
 Objective:
 
-To verify Terminal Aerodrome Forecast based upon point scheme based upon safety of aviation.  
+To verify Terminal Aerodrome Forecast based upon point scheme based upon aviation safety.  
 
 Point Scheme
 
