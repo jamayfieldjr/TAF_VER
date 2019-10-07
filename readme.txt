@@ -83,7 +83,7 @@ v.  The overall TAF present weather score is the sum of the number of points (an
     each for correct forecasts (pcf) divided by the total number of available points (ap) multiplied by 100 ((pcf/ap)*100).
     
 Lowest Altimeter Setting
-i. No used 
+i. Not used 
 
 Combined TAF Accuracy
 i.  The overall TAF score using all available points earned divided by the possible available points for every hour in the
