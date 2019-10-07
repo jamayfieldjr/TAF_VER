@@ -147,3 +147,135 @@ blowing sand (BLSA), drifting sand (DRSA), and sandstorm (SS).
 (12) Volcanic ash (VA), and
 (13) Squalls (SQ). 
 
+
+6.2.3 TAF Verification Reports. NWS employees access verification statistics through the
+Stats on Demand feature of the NWS Verification Web Page. Stats on Demand accesses an
+interactive database and generates verification statistics customized to the user’s request. The
+user is able to request data for any TAF element, a single forecast type (e.g. prevailing, TEMPO)
+and, if desired, corresponding data from a single guidance product (i.e., MOS, LAMP,
+persistence) for one or more:
+ a. months,
+ b. scheduled TAF beginning times, i.e., 0000, 0600, 1200, 1800 UTC,
+ c. projection period groups (see section 6.2.4),
+d. verification sites (single site, multiple sites, WFO forecast area, NWS Region, or
+national). When a single WFO forecast area or a subset of it is selected, a
+forecaster may use his/her private password to request verification statistics from
+Stats on Demand that include only the forecasts made by that forecaster. The
+personalized password will protect the privacy of each forecaster and keep
+individualized verification statistics confidential.
+The user of Stats on Demand also specifies one of the following options concerning scheduled
+and amended TAFs: (a) verify scheduled TAFs only, (b) verify amended TAFs only, or (c) verify
+scheduled and amended TAFs.
+Most verification statistics are computed from categorical contingency tables of forecasts versus
+observations for TAFs and the user-selected guidance product. Since forecasts are evaluated
+every 5 minutes, the contingency tables usually contain twelve entries per hour per verification
+site. Forecast categories for each element are defined in section 6.2.5.
+6.2.4 Projections. Scheduled TAFs are issued and verified for projections of 24 hours beyond
+the initial valid time of the most recent scheduled TAF. For verification purposes, projections
+are defined from the initial valid time of the TAF, which is 0000, 0600, 1200, or 1800 UTC for
+scheduled TAFs and the issuance time for amendments. When the user requests verification
+statistics for scheduled TAFs only, he/she selects one or more of the following projection period
+groupings:
+ a. greater than zero to 3 hours, 
+ NWSI 10-1601 NOVEMBER 3, 2005
+38
+ b. greater than 3 to 6 hours,
+ c. greater than 6 to 9 hours,
+ d. greater than 9 to 12 hours,
+ e. greater than 12 to 24 hours.
+When the user requests verification statistics for amended TAFs only or scheduled and amended
+TAFs combined, he/she selects one or both of the following projection periods:
+ a. greater than zero to 3 hours,
+ b. greater than 3 to 6 hours.
+6.2.5 Elements. The user of Stats on Demand specifies a single element. To receive results for
+multiple elements, the user must run Stats on Demand separately for each element desired.
+a. Ceiling Height. Ceiling height is recorded in the database in hundreds of feet
+AGL and verified in the following categories. From these categories, contingency
+tables of forecasts versus observations and guidance versus observations are
+prepared, and verification statistics are computed. Sometimes categories are
+combined.
+ 1: Less than 200 feet,
+2: 200 to 400 feet,
+3: 500 to 900 feet,
+4: 1000 to 1900 feet,
+5: 2000 to 3000 feet,
+6: Greater than 3000 feet (includes cases with no ceiling).
+A 2-category verification is also available whenever the user selects a critical
+threshold value, x (in hundreds of feet), which is defined by the user.
+ 1: Ceiling less than x,
+2: Ceiling greater than or equal to x (includes cases with no ceiling).
+b. Visibility. Visibility is recorded in the database in statute miles and fractions
+thereof and verified in the following categories. From these categories,
+contingency tables of forecasts versus observations and guidance versus
+observations are prepared, and verification statistics are computed. Sometimes
+categories are combined.
+1: Less than ½ statute mile, 
+ NWSI 10-1601 NOVEMBER 3, 2005
+39
+ 2: ½ to less than 1 statute mile,
+3: 1 through less than 2 statute miles,
+4: 2 through less than 3 statute miles,
+5: 3 through 5 statute miles,
+6: Greater than 5 statute miles.
+ A 2-category verification is also available whenever the user selects a critical
+threshold value, y (in statute miles), which is defined by the user.
+ 1: Visibility less than y,
+ 2: Visibility greater than or equal to y.
+c. Flight Category. To determine the flight category, the ceiling and visibility are
+each converted to the categories in Table 16. The categories for ceiling and
+visibility are then combined by taking the lower category of the two. This is the
+flight category. From these categories, contingency tables of forecasts versus
+observations and guidance versus observations are prepared, and verification
+statistics are computed. Sometimes categories are combined.
+ A 2-category verification is also available whenever the user selects the following
+critical threshold values: x (in hundreds of feet) for ceiling and y (in statute miles)
+for visibility, which are defined by the user.
+ 1: Ceiling less than x or visibility less than y.
+ 2: Ceiling greater than or equal to x and visibility greater than or equal to y.
+Table 16. Categories for ceiling and visibility used to determine the flight category.
+CATEGORY CEILING (feet) VISIBILITY (statute miles)
+Very Low Instrument Flight Rules
+(VLIFR)
+less than 200 less than ½
+Low Instrument Flight Rules (LIFR) 200 to 400 ½ to less than 1
+Instrument Flight Rules (IFR) 500 to 900 1 to less than 3
+Marginal Visual Flight Rules (MVFR) 1000 to 3000 3 to 5
+Visual Flight Rules (VFR) no ceiling or
+greater than 3000
+greater than 5
+d. Wind Direction. From the following categories, contingency tables of forecasts
+versus observations and guidance versus observations are prepared, and
+verification statistics are computed. Wind direction is not verified whenever (1)
+the observed speed is less than 6 knots or (2) the observed or forecast direction is
+unspecified due to calm or variable winds.
+ 1: North (340 to 20 degrees), 
+ NWSI 10-1601 NOVEMBER 3, 2005
+40
+ 2: Northeast (30 to 60 degrees),
+ 3: East (70 to 110 degrees),
+ 4: Southeast (120 to 150 degrees),
+ 5: South (160 to 200 degrees),
+ 6: Southwest (210 to 240 degrees),
+ 7: West (250 to 290 degrees),
+ 8: Northwest (300 to 330 degrees).
+e. Sustained Wind Speed. From these categories, contingency tables of forecasts
+versus observations and guidance versus observations are prepared, and
+verification statistics are computed.
+ 1: Less than 8 knots,
+ 2: 8 to 12 knots,
+ 3: 13 to 17 knots,
+ 4: 18 to 22 knots,
+ 5: 23 to 27 knots,
+ 6: 28 to 32 knots,
+ 7: greater than 32 knots.
+f. Wind Gusts. From these categories, contingency tables of forecasts versus
+observations are prepared, and verification statistics are computed. MOS
+guidance is not available for wind gusts.
+ 1: No gusts or gusts less than 16 knots,
+ 2: 16 to 22 knots,
+ 3: 23 to 27 knots,
+ 4: 28 to 32 knots,
+ 5: 33 to 37 knots,
+ 6: 38 to 42 knots,
+ 7: 43 to 47 knots,
+ 8: greater than 47 knots. 
