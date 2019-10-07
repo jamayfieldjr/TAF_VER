@@ -1,85 +1,30 @@
-Criteria Evaluate Requirement Hourly Score and
-Overall Percentage
-Correct
-Ceiling (cig) All specification
-and amendment
-criteria as
-documented on the
-Installation data
-page/Installation
-Weather support
-plan (or equivalent)
-Verify within forecast
-categories as a correct
-forecast or an incorrect
-forecast for all groups.
-The hourly score is
-one point for a correct
-forecast and zero
-points for an incorrect
-forecast.
-The overall TAF cig
-percentage correct is
-the total number of
-points for correct
-forecasts (pcf) divided
-by the total number of
-available points (ap)
-multiplied by 100
-((pcf/ap)*100).
-Visibility (vis) All specification
-and amendment
-criteria as
-documented on the
-Installation data
-page/Installation
-Weather support
-plan (or equivalent)
-Verify within forecast
-categories as a correct
-forecast or an incorrect
-forecast for all groups.
-The hourly score is
-one point for a correct
-forecast and zero
-points for an incorrect
-forecast.
-The overall TAF vis
-percentage correct is
-the total number of
-points for correct
-forecasts (pcf) divided
-by the total number of
-available points (ap)
-multiplied by 100
-((pcf/ap)*100).
-Wind Speed + or – 9 knots Verify all forecast groups
-where wind speeds are GTE
-than 6 knots. If the forecast is
-within 9 knots it is a correct
-forecast. For 10 knots or
-greater of error the forecast is
-incorrect.
-The hourly score is
-one point for a correct
-forecast and zero
-points for an incorrect
-forecast.
-The overall TAF
-Wind Speed
-percentage correct is
-the total number of
-points for correct
-forecasts (pcf) divided 
-16 AFI15-114 16 MARCH 2017
-by the total number of
-available points (ap)
-multiplied by 100
-((pcf/ap)*100).
-Wind
-Direction
-+ or – 50/30
-degrees
+Criteria Evaluate Requirement Hourly Score and Overall Percentage Correct 
+
+Ceiling (cig) 
+
+i.   All specification and amendment criteria as Weather support plan 
+ii.  Verify within forecast categories as a correct forecast or an incorrect forecast for all groups.
+iii. The hourly score is one point for a correct forecast and zero points for an incorrect forecast.
+iv.  The overall TAF cig percentage correct is the total number of points for correct forecasts (pcf) divided by the total number of
+     available points (ap) multiplied by 100 ((pcf/ap)*100).
+
+Visibility (vis) 
+i.   All specification and amendment criteria as documented on the Weather support
+ii.  Verify within forecast categories as a correct forecast or an incorrect forecast for all groups.
+iii. The hourly score is one point for a correct forecast and zero points for an incorrect forecast.
+iv.  The overall TAF vis percentage correct is the total number of points for correct forecasts (pcf) divided by the total number of
+     available points (ap) multiplied by 100 ((pcf/ap)*100).
+     
+Wind Speed 
+
+i.   + or – 9 knots 
+ii.  Verify all forecast groups where wind speeds are GTE than 6 knots. If the forecast is within 9 knots it is a correct
+     forecast. For 10 knots or greater of error the forecast is incorrect.
+iii. The hourly score is one point for a correct forecast and zero points for an incorrect forecast.
+iv.  The overall TAF Wind Speed percentage correct is the total number of points for correct forecasts (pcf) divided by the total number      of available points (ap) multiplied by 100 ((pcf/ap)*100).
+
+Wind Direction
+i. + or – 50/30 degrees
 Verify all forecast groups.
 For periods when winds are
 more than 6 knots but less
