@@ -570,3 +570,9 @@ direction is not evaluated with this statistic. Ideally, this statistic is zero.
 Example: The TAF prevailing group forecast ceilings at 1400 feet, the
 PROB group forecast ceilings at 600 feet, and ceilings were observed
 between 1000 and 1900 feet 90% of the time. Prob Hurt (%): 90.
+
+Reference:
+
+Instruction, Air Force. "Instruction 15-114." Weather Technical Readiness Evaluation (2017).
+
+https://static.e-publishing.af.mil/production/1/af_a3/publication/afi15-114/afi15-114.pdf
