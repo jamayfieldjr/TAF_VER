@@ -279,3 +279,294 @@ guidance is not available for wind gusts.
  6: 38 to 42 knots,
  7: 43 to 47 knots,
  8: greater than 47 knots. 
+
+6.2.6 Forecast Types. TAFs primarily predict prevailing conditions and use the “from” (FM)
+change indicator to introduce changes to the forecast prevailing conditions. Prevailing forecast
+verification is described in paragraph a. Another “type” of forecast, called the operational
+impact forecast, is defined in paragraph b. Sometimes a TEMPO or PROB change indicator is
+used to respectively designate a temporarily fluctuating or probabilistic forecast condition.
+When a TEMPO or PROB change indicator is used, two forecasts are valid for the same time.
+TEMPO and PROB forecast evaluation is explained, respectively, in paragraphs c and d. The
+following terms will be repeated several times in paragraphs a through d and are defined: 
+ NWSI 10-1601 NOVEMBER 3, 2005
+42
+ (1) Change. For ceiling and visibility, change is defined as category change.
+Categories for these elements are defined in section 6.2.5. Each of the
+thirteen weather types is a binary variable, and change is defined as the
+starting or stopping of that weather type. Precipitation intensities are
+ignored. For wind direction, change is defined (a) as a 40-degree or
+greater wind shift between successive observations, considering only 6-
+knot or greater observations or (b) by a variable wind remark. For
+sustained wind speed, change is defined as at least an 8-knot increase or
+decrease between successive observations. For wind gusts, change is
+defined as (a) at least a 10-knot increase or decrease between successive
+observations or (b) when successive observations change from the
+existence of gusts to no gusts or vice versa.
+ (2) Hit. For ceiling and visibility, a forecast hit is defined as the forecast
+category equaling the observation category, and categories are defined in
+section 6.2.5. For each of the thirteen weather types, a hit occurs when the
+forecast and observation agree on the occurrence or non-occurrence of that
+weather type. For sustained wind speed, a hit occurs whenever the
+absolute error is less than 8 knots. For wind gusts, a hit occurs whenever
+the absolute error is less than 10 knots or neither observation nor forecast
+contains gusts. Forecast and observed gusts less than 16 knots are treated
+as no gusts.
+ (3) Less [More] in Error. When comparing two forecast types (i.e., prevailing
+and TEMPO, prevailing and PROB) for ceiling or visibility, less [more] in
+error means the TEMPO or PROB forecast was not a hit and had a smaller
+[larger] absolute categorical error than the prevailing forecast (use the
+categories defined for ceiling and visibility in section 6.2.5) . For wind
+direction, sustained wind speed and wind gusts, less [more] in error means
+the TEMPO or PROB forecast was not a hit, and the absolute error of the
+TEMPO or PROB forecast was lower [higher] than the absolute error of
+the prevailing forecast. All thirteen weather types are binary variables, so
+the term “less [more] in error” is not used when referring to any of them.
+ (4) More [Less] Favorable Flight Conditions. When comparing two forecasts
+types (i.e., prevailing and TEMPO, prevailing and PROB) for ceiling or
+visibility, the more [less] favorable flight conditions are defined as the
+higher [lower] category forecast, using the categories defined for each
+element in section 6.2.5. For each of the thirteen weather type forecasts
+(each is a binary variable), the more [less] favorable flight conditions are
+defined as the negative [positive] forecast of the event. For sustained
+wind speed and wind gust forecasts, the more [less] favorable flight
+conditions are defined as the lower [higher] speed forecast. “No gust”
+forecasts are 
+ NWSI 10-1601 NOVEMBER 3, 2005
+43
+ more favorable than gust forecasts and vice versa. Wind direction
+forecasts are not compared in this manner.
+ a. Prevailing Forecast. The prevailing forecast is defined as (1) the forecast
+conditions that are in the initial time period of the TAF and (2) any forecast
+conditions that immediately follow a FM change indicator. For the element
+specified by the user of Stats on Demand (e.g., ceiling), the prevailing forecast is
+evaluated at the end of every 5-minute interval of the TAF by comparing it to the
+most recent METAR/SPECI available. Most verification is categorical, using the
+categories defined in section 6.2.5, and results are recorded twelve times per hour
+in contingency tables of forecasts versus observations. Prevailing forecasts may
+be evaluated by themselves, or they may be matched with one guidance product at
+a time, producing an additional contingency table of guidance forecasts versus
+observations. Conventional verification statistics are computed from the
+contingency tables, and comparisons may be drawn between prevailing forecast
+and guidance performance.
+ b. Operational Impact (OIF). TAFs are sometimes formatted in a manner whereby
+two forecasts are valid for a single terminal at the same time. One of the
+following circumstances applies to all NWS TAFs at all times: (1) Just the
+prevailing forecast is in effect. (2) The prevailing forecast is in effect
+simultaneously with a forecast for temporary conditions (TEMPO). (3) The
+prevailing forecast is in effect simultaneously with a 30% or 40% probabilistic
+forecast (PROB). For verification, the OIF is defined as the forecast in effect that
+is most likely to have the largest impact on operations. The following rules are
+used to determine the OIF:
+ (1) The OIF is undefined for wind direction.
+ (2) If no TEMPO or PROB forecast is in effect for the user-specified element,
+then the OIF for that element is defined as the prevailing forecast.
+ (3) If a PROB forecast is in effect for the user-specified element, then the OIF
+for that element is defined as the forecast (prevailing or PROB) of the less
+favorable flight conditions, i.e., lower ceiling category, lower visibility
+category, higher wind speed, or the occurrence of the weather type.
+ (4) If a TEMPO forecast is in effect for the user-specified element, then the
+OIF for that element is defined through a two step process.
+ (a) First step—the variability test. The legitimacy of the TEMPO
+forecast is first evaluated by a variability test at the end of every 5-
+minute interval of the TAF. If the observation database changed
+twice or more ±90 minutes from the end-point of the 5-minute 
+ NWSI 10-1601 NOVEMBER 3, 2005
+44
+interval, then the TEMPO forecast passes the variability test for
+that 5-minute interval. Note: This test just measures condition
+variability—it does not measure forecast correctness.
+ (b) Second step. If the TEMPO forecast fails the variability test for a
+given 5-minute interval, then the OIF for that interval is defined as
+the forecast with the less favorable flight conditions, i.e., lower
+ceiling category, lower visibility category, higher wind speed, or
+the occurrence of the weather type.
+ If the TEMPO forecast passes the variability test for a given 5-
+minute interval, then the OIF for that interval is defined as (1) the
+forecast with the smallest categorical error for ceiling and
+visibility; (2) the smallest error for wind speed and wind gusts; or
+(3) no error for weather type.
+ (5) The OIF for flight category is determined by first calculating the OIF
+separately for ceiling and visibility. Then, the OIFs for ceiling and
+visibility are each converted to the categories in Table 16. The lower
+category of the two is the flight category OIF.
+ Just like the prevailing forecast, the OIF is evaluated only for the element
+specified by the user of Stats on Demand at the end of every 5-minute interval
+that the TAF is valid. At each of these times, the OIF is compared to the most
+recent METAR/SPECI available. Most verification is categorical, using the
+categories defined in section 6.2.5, and results are recorded twelve times per hour
+in contingency tables of forecasts versus observations. OIFs may be evaluated by
+themselves, or they may be matched with one guidance product at a time,
+producing an additional contingency table of guidance forecasts versus
+observations. Conventional verification statistics are computed from the
+contingency tables, and comparisons may be drawn between OIF performance
+and guidance performance.
+ c. TEMPO Forecast. The TEMPO forecast is evaluated at the end of every 5-minute
+interval that the TEMPO forecast is valid for the user-specified element. TEMPO
+forecast evaluation is separate from OIF evaluation, but some of the same
+methodology is employed for TEMPO evaluation as OIF evaluation. Since no
+guidance product provides TEMPO forecasts, TEMPO forecast verification
+statistics are not matched with guidance. The following statistics are tallied:
+ (1) Number of hours. This is the total number of hours (the number of 5-
+minute intervals divided by 12) that TEMPO groups were valid for the
+user-specified element. Data are given to the nearest hour. 
+ NWSI 10-1601 NOVEMBER 3, 2005
+45
+ (2) Justified TEMPO (%). This is the percentage of 5-minute intervals within
+the TEMPO groups that passed the aforementioned OIF variability test for
+the user-specified element and is re-stated: For each 5-minute interval
+inside a TEMPO group, if the observation database changed twice or more
+±90 minutes of the end-point of that 5-minute interval, then the TEMPO
+forecast for that 5-minute interval is justified. This statistic just measures
+condition variability—it does not measure forecast correctness. Example:
+A TEMPO group is in effect from 0800 until 1200 UTC. The end of every
+5-minute interval must be checked for justification. Start with the end time
+of 0800-0805 UTC and see if two or more changes occur between 0635
+and 0935 UTC (0805 UTC ±90 minutes). If a 1500-foot ceiling at 0635
+UTC rises to 2500 feet at 0720 UTC, and then drops to 1200 feet at 0840
+UTC, then two changes occurred between 0635 and 0935 UTC, making
+the TEMPO group justified for the 0800-0805 UTC interval. Repeat this
+process for every five minute interval until you finish the TEMPO group at
+noon (last 5-minute interval is 1155-1200 UTC). Assuming no more
+ceiling category changes occurred after 0840 UTC, the % time that the
+0800-1200 UTC TEMPO group was justified was 10/48 = 21%. After
+0850 UTC, none of the 5-minute intervals were “justified”(no changes or
+only one change occurred ±90 minutes of the end time of each 5-minute
+interval). Hence the justification test passed between 0800 and 0850 UTC
+and failed after 0850 UTC, making the numerator 10. The denominator is
+48 (12 possible changes per hour times 4 hours).
+ (3) Justified TEMPO–Hit (%). Considering only the 5-minute intervals when
+the TEMPO forecast was justified for the user-specified element, this is
+the percentage of time that the TEMPO forecast was a hit. Ideally, this
+statistic ranges between 10 and 49. Example: Between 0600 and 0820
+UTC, the observations indicated that ceilings varied sufficiently to justify
+a TEMPO group. The TAF prevailing group forecast ceilings at 800 feet,
+the TEMPO group forecast ceilings at 300 feet, and ceilings 200 to 400
+feet, inclusive, were observed at the end of 40% of the 5-minute intervals
+between 0600 and 0820 UTC. TEMPO Hit (%): 40.
+ (4) Justified TEMPO–Improved the TAF (%). Considering only the 5-minute
+intervals when the TEMPO forecast was justified, this is the percentage of
+time that the TEMPO forecast was not a hit; however the TEMPO forecast
+was less in error than the prevailing forecast. Since each of the thirteen
+weather types are binary variables and can only hit or miss, they are not
+evaluated with this statistic. Ideally, 10 to 49 percent of these TEMPO
+cases are hits (previous statistic), and this statistic is zero. Example:
+Between 0600 and 0820 UTC, the observations indicated that ceilings
+varied enough to justify a TEMPO group. The TAF prevailing group
+forecast ceilings at 1200 feet, the TEMPO group forecast ceilings at 700 
+ NWSI 10-1601 NOVEMBER 3, 2005
+46
+feet, and ceilings between 200 and 400 feet were observed at the end of
+40% of the 5-minute intervals between 0600 and 0820 UTC. TEMPO
+improved TAF (%): 40.
+ (5) TEMPO Should Be FM (%). Considering only the 5-minute intervals
+when the TEMPO forecast was not justified, this statistic is the percentage
+of time when the TEMPO forecast was a hit, resulting in an incorrect
+prevailing forecast. Ideally, this statistic is zero. Example: During the
+period that the observations indicated that ceilings did not vary enough to
+justify a TEMPO group, the TAF prevailing group forecast ceilings at
+1200 feet, the TEMPO group forecast ceilings at 800 feet, and ceilings
+were observed between 500 and 900 feet all the time. TEMPO S/B FM
+(%): 100.
+ (6) TEMPO Benign (%). Considering only the 5-minute intervals when the
+TEMPO forecast was not justified, this statistic is the percentage of time
+whenever (a) the TEMPO forecast was more in error than the prevailing
+forecast, and (b) the TEMPO forecast predicted more favorable flight
+conditions than the prevailing forecast. In these cases, poor TEMPO
+forecasts are benign to flight operations because the pilot has already
+planned for the less favorable flight conditions in the prevailing forecast.
+Wind direction is not evaluated with this statistic. Ideally, this statistic is
+zero. Example: The TAF prevailing group forecast ceilings at 700 feet,
+the TEMPO group forecast ceilings at 1200 feet, and ceilings were
+observed between 500 and 900 feet at the end of 90% of the 5-minute
+intervals that failed the justification test. Tempo Benign (%): 90.
+ (7) TEMPO Hurt (%). Considering only the 5-minute intervals when the
+TEMPO forecast was not justified, this statistic is the percentage of time
+whenever (a) the TEMPO forecast was more in error than the prevailing
+forecast, and (b) the TEMPO forecast predicted less favorable flight
+conditions than the prevailing forecast. In these cases, poor TEMPO
+forecasts hurt flight operations because the pilot is forced to plan for the
+less favorable flight conditions that ultimately do not occur. Wind
+direction is not evaluated with this statistic. Ideally, this statistic is zero.
+Example: The TAF prevailing group forecast ceilings at 1400 feet, the
+TEMPO group forecast ceilings at 600 feet, and ceilings were observed
+between 1000 and 1900 feet at the end of 90% of the 5-minute intervals
+that failed the justification test. TEMPO Hurt (%): 90.
+ d. PROB Forecast. The PROB forecast is evaluated at the end of every 5-minute
+interval that the PROB forecast is valid for the user-specified element. Since no
+guidance product provides PROB forecasts, PROB forecast verification statistics
+are not matched with guidance. The following statistics are tallied: 
+ NWSI 10-1601 NOVEMBER 3, 2005
+47
+ (1) Number of Hours: This is the total number of hours (the number of 5-
+minute intervals divided by twelve) that PROB groups were valid for the
+user-specified element. Data are given to the nearest hour.
+ (2) PROB Hit (Element + precip/TS) (%): This is the percentage of all 5-
+minute intervals within PROB groups for the user-specified element that
+(a) were forecast hits and (b) precipitation or a thunderstorm occurred.
+Credit is not granted if the user-specified element is a hit, but precipitation
+or a thunderstorm did not occur. All elements are eligible for evaluation
+except precipitation and thunderstorms. Ideally, this statistic is between
+30 and 40. Example: The prevailing forecast is 4000 feet, the PROB
+forecast is 1500 feet, and light rain is forecast with the lower ceilings.
+Ceilings between 1000 and 1900 feet with light snow were observed at the
+end of 30% of the 5-minute intervals. Prob Hit w/ precip/TS: 30. Note:
+The 30% hit rate occurred even though rain was forecast with the lower
+ceilings and snow was observed. For this statistic, any type of
+precipitation or a thunderstorm is sufficient to verify the ceiling. The
+significant weather type (incorrect rain forecast) is verified separately in
+the significant WX type rows. If no precipitation had occurred with the
+lower ceilings, the forecaster would not have gotten credit for the ceilings
+and the Prob Hit w/ precip/TS would have been zero.
+(3) PROB Hit w/out precip/TS (%): This is the percentage of 5-minute
+intervals that the user-specified element forecast in PROB groups was a
+hit, even though precipitation or a thunderstorm type (TS, FC, +FC)
+defined in previous bullet) did not occur. All elements are verified except
+for the following significant weather types: all precipitation types (rain
+types, snow types, ice types, freezing precipitation, hail) and thunderstorm
+types (TS, FC, +FC). For all precipitation types and thunderstorm types,
+this column is “blacked out.” Example: The prevailing ceiling forecast is
+4000 feet, the PROB forecast is 1500 feet, and light rain is forecast with
+the lower ceilings. Ceilings between 1000 and 1900 feet were observed at
+the end of 30% of the 5-minute intervals, but no precipitation or
+thunderstorm events occurred at the end of these 5-minute intervals. Prob
+Hit w/out precip/TS: 30.
+ (4) PROB Hit (Precip/TS only) (%): This is the percentage of 5-minute
+intervals within PROB groups that were forecast hits. Only precipitation
+and thunderstorms are eligible for evaluation. Ideally, this statistic is
+between 30 and 40.
+ (5) PROB Improved the TAF (%): This is the percentage of 5-minute
+intervals within PROB groups for the user-specified element whenever the 
+ NWSI 10-1601 NOVEMBER 3, 2005
+48
+PROB forecast was not a hit, but the PROB forecast was less in error than
+the prevailing forecast. Unlike “PROB Hit,” credit is granted whenever
+precipitation or a thunderstorm does not occur with the user-specified
+element. All elements are eligible for evaluation except the thirteen
+weather types. Ideally, this statistic is zero. Example: The TAF prevailing
+group forecast ceilings at 1200 feet, the PROB group forecast ceilings at
+700 feet, ceilings below 200 to 400 feet were observed 40% of the time,
+and ceilings 1000 feet or higher were observed 60% of the time. Prob Imp
+(%): 40.
+ (6) PROB Benign (%). This is the percentage of all 5-minute intervals within
+PROB groups for the specified user-element whenever (a) the PROB
+forecast was more in error than the prevailing forecast, and (b) the PROB
+forecast predicted more favorable flight conditions than the prevailing
+forecast. In these cases, the poor PROB forecasts are benign to flight
+operations, because the pilot has already planned for the less favorable
+flight conditions in the prevailing forecast. Wind direction is not eligible
+for evaluation. Ideally, this statistic is zero. Example: The TAF prevailing
+group forecast ceilings at 700 feet, the PROB group forecast ceilings at
+1200 feet, and ceilings were observed between 500 and 900 feet at the end
+of 90% of the 5-minute intervals. Prob Benign (%): 90.
+ (7) PROB Hurt (%). This is the percentage of all 5-minute intervals within
+PROB groups for the user-specified element whenever (a) the PROB
+forecast was more in error than the prevailing forecast, and (b) the PROB
+forecast predicted less favorable flight conditions than the prevailing
+forecast. In these cases, the poor PROB forecasts hurt flight operations,
+because the pilot is forced to plan for the less favorable flight conditions
+that ultimately do not occur. No check is made to see if precipitation or
+thunderstorms occurred with the other elements and weather types. Wind
+direction is not evaluated with this statistic. Ideally, this statistic is zero.
+Example: The TAF prevailing group forecast ceilings at 1400 feet, the
+PROB group forecast ceilings at 600 feet, and ceilings were observed
+between 1000 and 1900 feet 90% of the time. Prob Hurt (%): 90.
