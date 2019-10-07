@@ -1,5 +1,38 @@
 Weather Support Plan 
 
+Point Award
+
+Visibility (5 Points)
+
+Info: Visibility Based upon NWS WSOM Chapter D-31
+
+5 points - Visibility is greater than 5 statute miles 
+4 points - Visibility is equal or greater than 3 statute miles and equal or less than 5 statute miles 
+3 points - Visibility is equal or greater than 1 statute mile and less than 3 statute miles 
+2 points - Visibility is equal or greater than 1/2 statute mile and equal or less than 1 statute mile 
+1 point -  Visibility is less than 1/2 statute mile
+
+Ceiling (5 Points)
+
+Info: Ceiling Based upon NWS WSOM Chapter D-31
+
+5 points - Ceiling is greater than 3000 feet 
+4 points - Ceiling is equal or greater than 1000 feet and equal or less than 3000 feet 
+3 points - Ceiling is equal or greater than 500 feet and less than 1000 feet 
+2 points - Ceiling is equal or greater than 200 feet and equal or less than 500 feet 
+1 point -  Ceiling is less than 200 feet
+
+Present Weather (1 Point)
+
+Info: Thunderstorms producing hail either are hazardous conditions which can destory or damage equipment/aircraft at the ramp. Freezing Rain, Rain mix with Ice Pellets, Heavy Snow, and other weather conditions can affected takeoff, landing, and ramp operations at an aerodrome.
+
+1 Point SHRA/RA/TSRA/TSSH/VCTS/TSRAGR/TSRAGS/SN/FZRA/RAPL/PLRA
+
+Visibility Obscrution (1 point)
+
+Info: Depending on 2 meter temperature record by the ASOS Fog or Freezing Fog can be a condition which creates harzardous conditions on the ramp and the aircraft would need to be deiced at the ramp for takeoff operations.
+
+1 Point (FG/FZFG)
 
 Criteria Evaluate Requirement Hourly Score and Overall Percentage Correct 
 
@@ -58,77 +91,34 @@ i.  The overall TAF score using all available points earned divided by the possi
 ii. Compute the sum of the total points correctly forecast (pcf) per group and divide by the sum of the total available points (ap) per group.
 iii. (TEMPO pcf + FM pcf) / (BECMG ap + TEMPO ap + FM ap)
 
-TAF Technical Readiness Metrics.
-Criteria Requirement (BCMG, TEMPO
-and FM)
-Hourly Score and Overall
-Percentage Correct (BCMG,
-TEMPO and FM)
-Category cig
-Accuracy
-As described in Table 4.1 for
-individual weather personnel.
-Identify individual skills and
-deficiencies and take actions as
-necessary.
-As described in Table 4.1 for
-individual weather personnel.
-Category vis
-Accuracy
-As described in Table 4.1 for
-individual weather personnel.
-Identify individual skills and
-deficiencies and take actions as
-necessary.
-As described in Table 4.1 for
-individual weather personnel.
-Category cig
-bias
-Number of total hours forecast for
-each cig category divided by the
-number of hours observed in each
-cig category.
-Report scores by hour in the TAF and
-an overall score for all hours of the
-TAF.
-Category vis
-bias
-Number of total hours forecast for
-each vis category divided by the
-number of hours observed in each
-vis category.
-Report scores by hour in the TAF and
-an overall score for all hours of the
-TAF.
-Present
-Weather
-Accuracy
-As described in Table 4.1 for
-individual weather personnel.
-Identify individual skills and
-deficiencies and take actions as
-necessary.
-As described in Table 4.1 for
-individual weather personnel.
-Present
-Weather Bias
-Number of total hours forecast for
-each present weather event
-divided by the number of hours
-observed in each present weather
-category.
-Report scores by hour in the TAF and
-an overall score for all hours of the
-TAF.
-FITL Value
-Added
-Compute TAFVER MOPs
-according to Table 4.1 for the
-model produced TAF (if
-applicable). Subtract the model
-produced TAF MOPs from the
-FITL TAF MOPs to determine the
-FITL value added.
-Report scores by hour in the TAF for
-each MOP in Table 4.1 and include an
-overall score for all hours of the TAF
+TAF Technical Readiness Metrics. 
+i.  Criteria Requirement (TEMPO and FM) 
+ii. Hourly Score and Overall Percentage Correct (TEMPO and FM)
+
+Category cig Accuracy
+i.  As described in aboved for individual weather personnel. Identify individual skills and deficiencies and take actions as necessary.
+ii. As described in aboved for individual weather personnel.
+
+Category vis Accuracy
+i.  As described in aboved for individual weather personnel. Identify individual skills and deficiencies and take actions as necessary.
+ii. As described in aboved for individual weather personnel.
+
+Category cig bias
+i.  Number of total hours forecast for each cig category divided by the number of hours observed in each cig category.
+ii. Report scores by hour in the TAF and an overall score for all hours of the TAF.
+
+Category vis bias
+i.  Number of total hours forecast for each vis category divided by the number of hours observed in each vis category.
+ii. Report scores by hour in the TAF and an overall score for all hours of the TAF.
+
+Present Weather Accuracy
+i.  As described in aboved for individual weather personnel. Identify individual skills and deficiencies and take actions as necessary.
+ii. As described in Table 4.1 for individual weather personnel.
+
+Present Weather Bias
+i.  Number of total hours forecast for each present weather event divided by the number of hours observed in each present weather      
+    category.
+ii. Report scores by hour in the TAF and an overall score for all hours of the TAF.
+
+FITL Value Added
+i. Not used 
