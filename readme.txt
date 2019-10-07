@@ -122,3 +122,28 @@ ii. Report scores by hour in the TAF and an overall score for all hours of the T
 
 FITL Value Added
 i. Not used 
+
+
+Present Weather: Each of the following weather types is verified separately in two 2-category contingency tables of forecasts versus observations and guidance versus observations. The two categories comprising each of these contingency tables are occurrence and non-occurrence of the weather type. Precipitation intensity is not verified.
+
+(1) Liquid precipitation—rain (RA), rain showers (SHRA), drizzle (DZ),
+(2) Snow types—snow (SN), snow showers (SHSN), snow grains (SG),
+(3) Freezing precipitation—freezing rain (FZRA), freezing drizzle (FZDZ),
+(4) Ice types, i.e., ice crystals (IC), ice pellets (PL), showers of ice pellets
+(SHPL), small (less than 1/4 inch diameter) hail/snow pellets (GS),
+showers of GS (SHGS),
+(5) Thunderstorms (TS), including funnel clouds (FC) and
+tornadoes/waterspout (+FC). Some observation stations do not report
+thunderstorms. These METARs use the TSNO remark. Thunderstorms in
+the TAF may not be verified under these conditions.
+(6) Hail (1/4 inch or greater diameter) (GR) and showers of GR (SHGR),
+(7) Fog/Mist—Fog (FG), mist (BR), and freezing fog (FZFG),
+(8) Haze (HZ) and smoke (FU),
+(9) All dust and sand events, i.e., widespread dust (DU), blowing dust
+(BLDU), drifting dust (DRDU), dust storm (DS), sand/dust whirls (PO),
+blowing sand (BLSA), drifting sand (DRSA), and sandstorm (SS).
+(10) Blowing spray (BLPY),
+(11) Blowing snow (BLSN), drifting snow (DRSN),
+(12) Volcanic ash (VA), and
+(13) Squalls (SQ). 
+
